@@ -1,0 +1,6 @@
+networkx[default,extra]
+pandas
+scrapy
+matplotlib
+requests
+jupyter
