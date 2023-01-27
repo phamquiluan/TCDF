@@ -1,7 +1,7 @@
 version: 2.1
  
 jobs:
-  say-hello:
+  build-and-test:
     docker:
       - image: 'continuumio/miniconda3:4.7.10'
     steps:
@@ -21,6 +21,6 @@ jobs:
             python runTCDF.py --data data/demo_dataset.csv
 
 workflows:
-  say-hello-workflow:
+  build-and-test-workflow:
     jobs:
-      - say-hello
+      - build-and-test
