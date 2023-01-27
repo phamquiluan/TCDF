@@ -24,6 +24,14 @@ Check out the Jupyter Notebook `TCDF Demo` to see a demonstration of the functio
 * [PyTorch](https://pytorch.org/get-started/locally/) (tested with PyTorch 0.4.1)
 * Optional: CUDA (tested with CUDA 9.2) 
 
+```bash
+conda create -n tcdf python=3.6
+conda activate tcdf
+conda install pytorch=0.4.1
+pip install -r requirements.txt
+```
+
+
 ### Required Python Packages:
 * numpy
 * pandas
