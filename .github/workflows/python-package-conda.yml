@@ -21,6 +21,7 @@ jobs:
     - name: smoke test
       run: |
         conda init
+        . ~/.bashrc
         conda create -n tcdf python=3.6
         conda activate tcdf
         conda install pytorch==0.4.1
