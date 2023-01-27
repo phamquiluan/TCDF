@@ -1,5 +1,7 @@
 # TCDF: Temporal Causal Discovery Framework
 
+[![Build and test TCDF](https://github.com/phamquiluan/TCDF/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/phamquiluan/TCDF/actions/workflows/python-package-conda.yml)
+
 The Temporal Causal Discovery Framework (TCDF) is a deep learning framework implemented in PyTorch. Given multiple time series as input, TCDF discovers **causal relationships** between these time series and outputs a causal graph. It can also predict one time series based on other time series. TCDF uses Attention-based Convolutional Neural Networks combined with a causal validation step. By interpreting the internal parameters of the convolutional networks, TCDF can also discover the **time delay** between a cause and its effect. 
 
 The learnt temporal causal graphs can include confounders and instantaneous effects.  This broadly applicable framework can be used to gain novel insights into the causal dependencies in a complex system, which is important for reliable predictions, knowledge discovery and data-driven decision making. 
