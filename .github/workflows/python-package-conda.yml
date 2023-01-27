@@ -18,11 +18,11 @@ jobs:
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
-    - name: Install Pytorch 0.4.1
-      run: conda install pytorch==0.4.1
-    - name: Install deps
-      run: pip install -r requirements.txt
-    - name: do smoke test
-      run: python runTCDF.py --help
-    - name: run demo data
-      run: python runTCDF.py --data data/demo_dataset.csv
+    - name: smoke test
+      run: |
+        conda create -n tcdf python=3.6
+        conda activate tcdf
+        conda install pytorch==0.4.1
+        pip install -r requirements.txt
+        python runTCDF.py --help
+        python runTCDF.py --data data/demo_dataset.csv
