@@ -15,6 +15,10 @@ jobs:
             . ~/.bashrc
             source activate tcdf
             conda install pytorch==0.4.1
+            pip install -r requirements.txt
+
+            python runTCDF.py --help
+            python runTCDF.py --data data/demo_dataset.csv
 
 workflows:
   say-hello-workflow:
