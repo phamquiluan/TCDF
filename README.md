@@ -90,6 +90,6 @@ Please cite this paper when using TCDF:
 }
 ```
 
-## Disclaim
+## Acknowledgement
 
 This work is inherited from https://github.com/M-Nauta/TCDF
