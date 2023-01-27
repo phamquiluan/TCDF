@@ -1,10 +1,9 @@
 version: 2.1
-
-
+ 
 jobs:
   say-hello:
     docker:
-      - image: circleci/miniconda:4.8.3
+      - image: 'continuumio/miniconda3:4.7.10'
     steps:
       - checkout
       - run:
